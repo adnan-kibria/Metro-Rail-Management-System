@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8134764E-D17B-498D-BCF8-7809A0083BC7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MRT_Management_System</RootNamespace>
+    <AssemblyName>MRT Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Access .Designer.cs">
+      <DependentUpon>Access .cs</DependentUpon>
+    </Compile>
+    <Compile Include="addticketprice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addticketprice.Designer.cs">
+      <DependentUpon>addticketprice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel.Designer.cs">
+      <DependentUpon>Admin Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackOut.cs" />
+    <Compile Include="DiffPassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffPassenger.Designer.cs">
+      <DependentUpon>DiffPassenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Forget Interface .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Forget Interface .Designer.cs">
+      <DependentUpon>Employee Forget Interface .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Login Interface .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Login Interface .Designer.cs">
+      <DependentUpon>Employee Login Interface .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry_gate_pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry_gate_pass.Designer.cs">
+      <DependentUpon>Entry_gate_pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exit_gate_pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exit_gate_pass.Designer.cs">
+      <DependentUpon>Exit_gate_pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fare_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fare_management.Designer.cs">
+      <DependentUpon>fare_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filter.Designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MR Management System .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MR Management System .Designer.cs">
+      <DependentUpon>MR Management System .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger.Designer.cs">
+      <DependentUpon>Passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passenger_welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passenger_welcome.Designer.cs">
+      <DependentUpon>passenger_welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_interface.Designer.cs">
+      <DependentUpon>Payment_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pdf_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pdf_interface.Designer.cs">
+      <DependentUpon>Pdf_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Probation Passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Probation Passenger.Designer.cs">
+      <DependentUpon>Probation Passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recharge.Designer.cs">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="revenuetracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="revenuetracking.Designer.cs">
+      <DependentUpon>revenuetracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ride_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ride_interface.Designer.cs">
+      <DependentUpon>Ride_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sort.Designer.cs">
+      <DependentUpon>Sort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sortz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sortz.Designer.cs">
+      <DependentUpon>Sortz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stations .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stations .Designer.cs">
+      <DependentUpon>Stations .cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateticketprice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateticketprice.Designer.cs">
+      <DependentUpon>updateticketprice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIP Passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIP Passenger.Designer.cs">
+      <DependentUpon>VIP Passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIP Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIP Register.Designer.cs">
+      <DependentUpon>VIP Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zone_Based_Analytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zone_Based_Analytics.Designer.cs">
+      <DependentUpon>Zone_Based_Analytics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Access .resx">
+      <DependentUpon>Access .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addticketprice.resx">
+      <DependentUpon>addticketprice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel.resx">
+      <DependentUpon>Admin Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign.resx">
+      <DependentUpon>Assign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiffPassenger.resx">
+      <DependentUpon>DiffPassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Forget Interface .resx">
+      <DependentUpon>Employee Forget Interface .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Login Interface .resx">
+      <DependentUpon>Employee Login Interface .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry_gate_pass.resx">
+      <DependentUpon>Entry_gate_pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exit_gate_pass.resx">
+      <DependentUpon>Exit_gate_pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fare_management.resx">
+      <DependentUpon>fare_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MR Management System .resx">
+      <DependentUpon>MR Management System .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger.resx">
+      <DependentUpon>Passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passenger_welcome.resx">
+      <DependentUpon>passenger_welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_interface.resx">
+      <DependentUpon>Payment_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pdf_interface.resx">
+      <DependentUpon>Pdf_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Probation Passenger.resx">
+      <DependentUpon>Probation Passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recharge.resx">
+      <DependentUpon>Recharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="revenuetracking.resx">
+      <DependentUpon>revenuetracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ride_interface.resx">
+      <DependentUpon>Ride_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sort.resx">
+      <DependentUpon>Sort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sortz.resx">
+      <DependentUpon>Sortz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stations .resx">
+      <DependentUpon>Stations .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateticketprice.resx">
+      <DependentUpon>updateticketprice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIP Passenger.resx">
+      <DependentUpon>VIP Passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIP Register.resx">
+      <DependentUpon>VIP Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zone_Based_Analytics.resx">
+      <DependentUpon>Zone_Based_Analytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
